@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/gradient"
+    tools:context=".MenuActivity">
+
+    <TextView
+        android:id="@+id/textMenu"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Menu"
+        android:textSize="80dp"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/btnTreningi"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Treningi"
+        android:textAllCaps="false"
+        android:layout_below="@id/textMenu"
+        android:backgroundTint="#5D047E"
+        android:textSize="50dp"
+        android:layout_marginTop="20dp"
+        />
+    <Button
+        android:id="@+id/btnStoper"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Stoper"
+        android:textAllCaps="false"
+        android:layout_below="@id/btnTreningi"
+        android:backgroundTint="#5D047E"
+        android:textSize="50dp"
+        android:layout_marginTop="50dp"
+        />
+    <Button
+        android:id="@+id/btnMapa"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Mapa"
+        android:textAllCaps="false"
+        android:layout_below="@id/btnStoper"
+        android:backgroundTint="#5D047E"
+        android:textSize="50dp"
+        android:layout_marginTop="50dp"
+        />
+    <Button
+        android:id="@+id/btnSettings"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Ustawienia"
+        android:textAllCaps="false"
+        android:layout_below="@id/btnMapa"
+        android:backgroundTint="#5D047E"
+        android:textSize="50dp"
+        android:layout_marginTop="50dp"
+        />
+
+</RelativeLayout>

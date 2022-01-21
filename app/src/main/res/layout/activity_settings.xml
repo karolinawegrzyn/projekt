@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/gradient"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:id="@+id/textSettings"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Ustawienia"
+        android:textSize="80dp"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/btnChangePassword"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Zmiana hasła"
+        android:textAllCaps="false"
+        android:layout_below="@id/textSettings"
+        android:backgroundTint="#5D047E"
+        android:textSize="44dp"
+        android:layout_marginTop="50dp"
+        />
+
+</RelativeLayout>

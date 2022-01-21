@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="117dp"
+        android:scaleType="centerCrop"
+    />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nazwa użytkownika"
+        android:textSize="25dp"
+        android:layout_below="@+id/imageView"
+        />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hasło"
+        android:inputType="textPassword"
+        android:layout_marginTop="50dp"
+        android:textSize="25dp"
+        android:layout_below="@+id/username"
+        />
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Powtórz hasło"
+        android:inputType="textPassword"
+        android:layout_marginTop="50dp"
+        android:textSize="25dp"
+        android:layout_below="@+id/password"
+        />
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zarejestruj się"
+        android:textAllCaps="false"
+        android:layout_below="@id/repassword"
+        android:backgroundTint="#5D047E"
+        android:textSize="25dp"
+        />
+    <Button
+        android:id="@+id/btnLogIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zaloguj się"
+        android:textAllCaps="false"
+        android:layout_below="@id/btnRegister"
+        android:backgroundTint="#5D047E"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        />
+
+
+
+
+
+</RelativeLayout>
