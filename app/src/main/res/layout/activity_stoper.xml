@@ -16,15 +16,15 @@
         android:textSize="80dp"
         android:gravity="center"
         />
+
     <Chronometer
         android:id="@+id/chronometer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30dp"
-        android:layout_marginTop="50dp"
         android:layout_below="@id/textStoper"
         android:layout_centerInParent="true"
-        />
+        android:layout_marginTop="50dp"
+        android:textSize="30dp" />
     <Button
         android:id="@+id/btnStart"
         android:layout_width="200dp"

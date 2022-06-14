@@ -20,7 +20,7 @@ public class StoperActivity extends AppCompatActivity {
         setContentView(R.layout.activity_stoper);
 
         chronometer = findViewById(R.id.chronometer);
-        chronometer.setFormat("Time: %s");
+        chronometer.setFormat("Time: %ms");
         chronometer.setBase(SystemClock.elapsedRealtime());
 
         btnS = findViewById(R.id.btnStart);

@@ -8,13 +8,55 @@
     android:background="@drawable/gradient"
     tools:context=".MainActivity">
 
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:map="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="600dp"
-    android:id="@+id/map"
-    tools:context=".MapsActivity"
-    android:name="com.google.android.gms.maps.SupportMapFragment"/>
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        tools:context=".MapsActivity" />
+    <Button
+        android:id="@+id/startRunButton"
+        android:layout_below="@id/map"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:textSize="25dp"
+        android:text="Start"
+        />
+    <Button
+        android:id="@+id/stopRunButton"
+        android:layout_below="@id/map"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:textSize="25dp"
+        android:layout_marginLeft="200dp"
+        android:text="Stop"
+        />
 
+    <TextView
+        android:id="@+id/textViewDistance"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/startRunButton"
+        android:text="distance: 0.0m"
+        android:textSize="35dp" />
+    <TextView
+        android:id="@+id/textStoper"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/textViewDistance"
+        android:text="time: "
+        android:textSize="35dp"
+        android:gravity="center"
+        />
+
+    <Chronometer
+        android:id="@+id/chronometerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDistance"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="85dp"
+        android:textSize="30dp" />
 </RelativeLayout>
